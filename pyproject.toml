@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-packaging"
+authors = [
+    {name = "Tania", email = "eu@tania.com"}
+]
+description = "package description"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests > 2.26.0",
+    "pandas",
+    "click",
+    "tinydb",
+    "six"
+]
+
+[tool.setuptools]
+packages = {find = {where = ["src"]}}
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[project.scripts]
+python-packaging = "tasks.cli:tasks_cli"
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+]
+mongo = ["pymongo"]
