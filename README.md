@@ -2,13 +2,13 @@ Studies related to the book 'Testing with pytest', Brian Okken, Oreally.
 
 Book git: https://github.com/jashburn8020/python-testing-with-pytest/tree/master
 
-# NICE THEME
+# Set a nice theme
 
 ```
 Install extension Dracula.
 ```
 
-# VSCODE FORMATTING
+# IDE settings
 
 ## AUTOPEP8
 
@@ -21,13 +21,13 @@ ext install ms-python.autopep8
 To format a document: CTRL+P and run 'Format Document'.
 It is possible on File/Preferences to set an option to Format On Save.
 
-# CREATE VIRTUAL ENV
+# Virtual env
 
 ```
 python3 -m venv .venv
 ```
 
-# ERROR CHECKING
+# Error checking
 
 Install extension Flake8.
 Run:
@@ -36,52 +36,51 @@ Run:
 flake8 src
 ```
 
-# PACKAGING
+# Packaging
 
-## CREATE .TOML FILE
-
-Notice that the build process installs the setuptools and wheel pack-
-ages.
+The build process installs the setuptools and wheel packages.
 It should be named pyproject.toml or setup.py.
 
-## BUILD
+## Build
 
 ```
 pip install -q build
 python -m build
 ```
 
-## INSTALL
+## Install
 
 ```
 python -m pip install dist/python_packaging-0.0.1-py3-none-any.whl
 ```
 
-## RUN
+## Run
 
 ```
 python-packaging
 ```
 
-# TEST
+# Tests
 
 ```
 pip install pytest
 ```
 
-## MOCK
+## Mock and Coverage
 
 ```
 pip install pytest-mock
+
+pip install pytest-cov
 ```
 
-## DEBUG ERROR
+## Debug test errors
 
 ```
 pytest --pdb
 ```
 
-## COVERAGE
+## Coverage
 
 ```
 pytest --cov=src
