@@ -2,25 +2,6 @@ Studies related to the book 'Testing with pytest', Brian Okken, Oreally.
 
 Book git: https://github.com/jashburn8020/python-testing-with-pytest/tree/master
 
-# Set a nice theme
-
-```
-Install extension Dracula.
-```
-
-# IDE settings
-
-## AUTOPEP8
-
-CTRL+P run command:
-
-```
-ext install ms-python.autopep8
-```
-
-To format a document: CTRL+P and run 'Format Document'.
-It is possible on File/Preferences to set an option to Format On Save.
-
 # Virtual env
 
 ```
@@ -85,3 +66,22 @@ pytest --pdb
 ```
 pytest --cov=src
 ```
+
+# Useful
+
+Set a nice theme:
+
+```
+Install extension Dracula.
+```
+
+IDE settings - AUTOPEP8:
+
+Run CTRL+P run command and install:
+
+```
+ext install ms-python.autopep8
+```
+
+To format a document: CTRL+P and run 'Format Document'.
+It is possible on File/Preferences to set an option to Format On Save.
